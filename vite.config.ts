@@ -4,12 +4,6 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  base: '/assistant/',
-  plugins: [
-    tailwindcss(),
-    reactRouter({
-      basename: '/assistant', // Define o basename para o React Router
-    }),
-    tsconfigPaths(),
-  ],
+  base: "/assistant/",
+  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
